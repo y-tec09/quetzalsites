@@ -1,0 +1,56 @@
+.contacto-page {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contacto-page h2 {
+  font-size: 1.8rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+}
+
+.contacto-page p {
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: var(--verde-principal);
+  color: var(--blanco-suave);
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-contacto:hover {
+  background-color: var(--verde-secundario);
+  transform: scale(1.05);
+}
+
+.contacto-facebook,
+.contacto-whatsapp,
+.contacto-desarrollador,
+.contacto-tradicional {
+  background-color: var(--blanco-suave);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.contacto-tradicional ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto-tradicional li {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 10px;
+}

@@ -1,0 +1,155 @@
+.testimonios-intro {
+  text-align: center;
+  margin: 60px 0 40px;
+}
+
+.testimonios-intro h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+}
+
+.testimonios-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+/* Testimonios destacados */
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.testimonio-item {
+  background-color: var(--blanco-suave);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.testimonio-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonio-icon {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+}
+
+.testimonio-item p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonio-item h3 {
+  font-size: 0.95rem;
+  color: var(--verde-secundario);
+  font-weight: bold;
+}
+
+/* Casos de éxito */
+.casos-exito {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.casos-exito h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 30px;
+}
+
+.casos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.caso-item {
+  background-color: var(--blanco-suave);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.caso-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.caso-item h3 {
+  font-size: 1.2rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.caso-item p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+}
+
+/* Rating promedio */
+.rating-promedio {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.rating-promedio h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+}
+
+.stars {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* CTA final */
+.testimonios-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--verde-principal), var(--verde-secundario));
+  color: var(--blanco-suave);
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 60px 0;
+}
+
+.testimonios-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonios-cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-cta {
+  background-color: var(--blanco-suave);
+  color: var(--verde-principal);
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}

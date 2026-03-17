@@ -1,0 +1,94 @@
+.planes-servicio {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.planes-servicio h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 20px;
+}
+
+.planes-intro {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+.planes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background-color: var(--blanco-suave);
+  border: 2px solid var(--verde-principal);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-secundario);
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.plan-card ul li {
+  margin: 8px 0;
+  color: var(--gris-oscuro);
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--verde-principal);
+  margin: 15px 0;
+}
+
+.btn-plan {
+  background-color: var(--verde-principal);
+  color: var(--blanco-suave);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-plan:hover {
+  background-color: var(--verde-secundario);
+  transform: scale(1.05);
+}
+
+.destacado {
+  border-color: var(--verde-secundario);
+  background-color: #f0fff0;
+}
+.icono-plan i {
+  font-size: 3rem;
+  color: var(--verde-principal);
+  margin-bottom: 1rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.plan-card:hover .icono-plan i {
+  transform: scale(1.1);
+  color: var(--verde-secundario);
+}

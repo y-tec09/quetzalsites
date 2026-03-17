@@ -1,0 +1,88 @@
+/*Elementos del titulo de sección*/
+.mini-hero {
+  width: 100%;
+  min-height: 250px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto 20px;          /* asegura centrado sin desbordes */
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;       /* título arriba, texto debajo */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--blanco-suave);
+  box-sizing: border-box;       /* padding incluido en el ancho */
+  overflow-x: hidden;           /* elimina scroll horizontal */
+}
+/*Declaración de imagenes*/
+.mh-cat {background: url('./../imgs/catalogo.png') center/cover no-repeat;}
+.mh-servs {background: url('./../imgs/servicios.png') center/cover no-repeat;}
+.mh-procs {background: url('./../imgs/procesos.png') center/cover no-repeat;}
+.mh-test {background: url('./../imgs/test.png') center/cover no-repeat;}
+.mh-contacts {background: url('./../imgs/contacts.png') center/cover no-repeat;}
+
+/* Overlay */
+.mini-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(32, 32, 32, 0.6);
+}
+
+/* Título */
+.mini-hero h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 10px;
+  z-index: 1;
+  max-width: 90%;               /* evita que se extienda demasiado */
+  word-wrap: break-word;
+}
+
+/* Texto */
+.mini-hero p {
+  font-size: 1.1rem;
+  color: var(--blanco-suave);
+  max-width: 90%;               /* limita ancho en desktop y móvil */
+  z-index: 1;
+  word-wrap: break-word;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .mini-hero {
+    min-height: 200px;
+    padding: 100px 15px 15px;
+  }
+
+  .mini-hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .mini-hero p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mini-hero {
+    min-height: 180px;
+    padding: 120px 10px 10px;
+  }
+
+  .mini-hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .mini-hero p {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+}
+
+
+/*Fin de titulo de sección*/

@@ -1,0 +1,82 @@
+/*Importación de complementos*/
+@import url('./categorias/menuresponsive.css');
+@import url('./categorias/portada.css');
+@import url('./categorias/sec-beneficios.css');
+@import url('./categorias/sec-plantillas.css');
+@import url('./categorias/sec-servs.css');
+@import url('./categorias/sec-cards-servs.css');
+@import url('./categorias/sec-cards-planes.css');
+@import url('./categorias/sec-procs.css');
+@import url('./categorias/sec-testims.css');
+@import url('./categorias/sec-cta.css');
+@import url('./categorias/sec-footer.css');
+@import url('./categorias/mini-hero.css');
+
+/*Animaciones*/
+@import url('./animaciones/anim-hero.css');
+@import url('./animaciones/anim-menu.css');
+
+/*Fin de importación*/
+
+/*Declaración de variables globales*/
+:root { 
+	--verde-principal: #337418; 
+	--verde-secundario: #5DD62C;
+	--gris-oscuro: #202020; 
+	--negro-profundo: #0F0F0F; 
+	--blanco-suave: #F8F8F8; 
+} 
+body { 
+	margin: 0; 
+	font-family: 'Montserrat', sans-serif; 
+	background-color: var(--blanco-suave); 
+	color: var(--gris-oscuro); 
+} 
+header { 
+	background-color: var(--negro-profundo); 
+	color: var(--blanco-suave); 
+	/*padding: 2rem;
+	text-align: center;*/
+} 
+header h1 { 
+	margin: 0; 
+	font-size: 2.5rem; 
+} 
+.btn { 
+	background-color: var(--verde-principal); 
+	color: var(--blanco-suave); 
+	padding: 0.8rem 1.5rem; 
+	border: none; border-radius: 5px; 
+	cursor: pointer; 
+	transition: background 0.3s;
+} 
+.btn:hover { 
+	background-color: var(--verde-secundario); 
+	color: var(--negro-profundo); 
+} 
+section { 
+	padding: 3rem 2rem; 
+	text-align: center; 
+} 
+.catalogo { 
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+	gap: 1.5rem; 
+} 
+.card { 
+	background-color: var(--blanco-suave); 
+	border: 2px solid var(--verde-principal); 
+	border-radius: 8px; 
+	padding: 1.5rem; 
+	transition: transform 0.3s, border-color 0.3s; 
+} 
+.card:hover { 
+	transform: translateY(-5px); 
+	border-color: var(--verde-secundario); 
+} 
+footer { 
+	background-color: var(--negro-profundo); 
+	color: var(--blanco-suave); 
+	text-align: center; 
+	padding: 2rem; 
+}

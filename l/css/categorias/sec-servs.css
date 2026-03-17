@@ -1,0 +1,62 @@
+.servicios {
+  background-color: var(--blanco-suave);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--verde-principal);
+}
+
+.servicios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.servicio-card {
+  background-color: var(--blanco-suave);
+  border: 2px solid var(--verde-principal);
+  border-radius: 10px;
+  width: 280px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(32, 32, 32, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-secundario);
+}
+
+/* Íconos */
+.servicio-icon i {
+  font-size: 3rem;
+  color: var(--verde-principal);
+  margin-bottom: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.servicio-card:hover .servicio-icon i {
+  color: var(--verde-secundario);
+  transform: scale(1.2);
+}
+
+/* Botón */
+.btn-servicio {
+  background-color: var(--verde-principal);
+  color: var(--blanco-suave);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-servicio:hover {
+  background-color: var(--verde-secundario);
+  transform: scale(1.05);
+}

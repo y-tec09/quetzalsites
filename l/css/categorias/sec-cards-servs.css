@@ -1,0 +1,96 @@
+/*Sección de descripción de servicio*/
+.servicios-intro {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+
+/*Sección de titulo de sección*/
+.servicios-titulo {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.servicios-titulo h2 {
+  font-size: 2.2rem;
+  color: var(--verde-principal);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.servicios-titulo h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--verde-secundario);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.servicios-titulo p {
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/*Sección de lista de servicios*/
+.servicio-card {
+  background-color: var(--blanco-suave);
+  border: 2px solid var(--verde-principal);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-secundario);
+}
+
+/* Íconos con fuente (ej. Font Awesome) */
+.icono-servicio i {
+  font-size: 3rem;
+  color: var(--verde-principal);
+  margin-bottom: 1rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.servicio-card:hover .icono-servicio i {
+  transform: scale(1.1);
+  color: var(--verde-secundario);
+}
+
+.servicio-card h3 {
+  font-size: 1.4rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.servicio-card p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+}
+
+.btn-servicio {
+  background-color: var(--verde-principal);
+  color: var(--blanco-suave);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-servicio:hover {
+  background-color: var(--verde-secundario);
+  transform: scale(1.05);
+}

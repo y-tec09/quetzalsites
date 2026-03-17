@@ -1,0 +1,324 @@
+.procesos-titulo {
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.procesos-titulo h2 {
+  font-size: 2.2rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.procesos-titulo h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--verde-secundario);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.procesos-titulo p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+.procesos-timeline {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.procesos-timeline h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 40px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.timeline-step {
+  background-color: var(--blanco-suave);
+  border: 2px solid var(--verde-principal);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.timeline-step:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-secundario);
+}
+
+.step-icon i {
+  font-size: 2.5rem;
+  color: var(--verde-principal);
+  margin-bottom: 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.timeline-step:hover .step-icon i {
+  transform: scale(1.1);
+  color: var(--verde-secundario);
+}
+
+.step-number {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--gris-oscuro);
+  margin-bottom: 10px;
+}
+
+.timeline-step h3 {
+  font-size: 1.3rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-step p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.5;
+}
+.procesos-visual {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.procesos-visual h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 40px;
+}
+
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-wrap: wrap; /* permite que los items bajen en pantallas pequeñas */
+}
+
+.timeline-horizontal::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--verde-principal);
+}
+
+.timeline-item {
+  flex: 1;
+  min-width: 220px; /* asegura que no se compriman demasiado */
+  text-align: center;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  background-color: var(--blanco-suave);
+  border: 3px solid var(--verde-principal);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, border-color 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-icon i {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  transition: color 0.3s;
+}
+
+.timeline-item:hover .timeline-icon {
+  transform: scale(1.1);
+  border-color: var(--verde-secundario);
+}
+
+.timeline-item:hover .timeline-icon i {
+  color: var(--verde-secundario);
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+}
+
+/* ✅ Corrección responsive */
+@media (max-width: 768px) {
+  .timeline-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-horizontal::before {
+    display: none; /* ocultamos la línea horizontal en móviles */
+  }
+
+  .timeline-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.procesos-beneficios {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.procesos-beneficios h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 40px;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.beneficio-item {
+  background-color: var(--blanco-suave);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beneficio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.beneficio-icon {
+  font-size: 3rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.beneficio-item:hover .beneficio-icon {
+  color: var(--verde-secundario);
+  transform: scale(1.1);
+}
+
+.beneficio-item h3 {
+  font-size: 1.2rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 0.5rem;
+}
+
+.beneficio-item p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.5;
+}
+
+.procesos-testimonios {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.procesos-testimonios h2 {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 40px;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.testimonio-item {
+  background-color: var(--blanco-suave);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.testimonio-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimonio-icon {
+  font-size: 2rem;
+  color: var(--verde-principal);
+  margin-bottom: 15px;
+}
+
+.testimonio-item p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonio-item h3 {
+  font-size: 0.95rem;
+  color: var(--verde-secundario);
+  font-weight: bold;
+}
+
+.procesos-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--verde-principal), var(--verde-secundario));
+  color: var(--blanco-suave);
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 60px 0;
+}
+
+.procesos-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.procesos-cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-cta {
+  background-color: var(--blanco-suave);
+  color: var(--verde-principal);
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+

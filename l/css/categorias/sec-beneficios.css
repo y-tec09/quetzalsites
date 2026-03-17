@@ -1,0 +1,96 @@
+/* Sección Beneficios */
+.beneficios {
+  background-color: var(--blanco-suave);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--verde-principal);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+/* Contenedor horizontal */
+.beneficios-grid {
+  display: flex;                /* activa alineación horizontal */
+  justify-content: center;      /* centra las tarjetas */
+  gap: 2rem;                    /* espacio entre tarjetas */
+  flex-wrap: wrap;              /* permite que bajen en pantallas pequeñas */
+}
+
+/* Tarjetas */
+.beneficio-card {
+  background-color: var(--blanco-suave);
+  border: 2px solid var(--verde-principal);
+  border-radius: 10px;
+  width: 280px;                 /* ancho fijo para alineación */
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(32, 32, 32, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.beneficio-card:nth-child(1) { animation-delay: 0.3s; }
+.beneficio-card:nth-child(2) { animation-delay: 0.6s; }
+.beneficio-card:nth-child(3) { animation-delay: 0.9s; }
+
+.beneficio-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--verde-secundario);
+}
+
+/* Imagen */
+.beneficio-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Íconos Font Awesome en Beneficios */
+.beneficio-icon i {
+  font-size: 3rem;               /* íconos más grandes */
+  color: var(--verde-principal); /* verde principal */
+  transition: color 0.3s, transform 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+/* Hover dinámico */
+.beneficio-card:hover .beneficio-icon i {
+  color: var(--verde-secundario); /* cambia a verde secundario */
+  transform: scale(1.2);          /* ligera ampliación */
+}
+
+/* Texto */
+.beneficio-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--gris-oscuro);
+}
+
+.beneficio-card p {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+}
+
+/* Animaciones */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
