@@ -50,8 +50,8 @@
 				<li><a href="../m/cat_plantillas.html">Catálogo</a></li>
 				<li><a href="../m/servicios_pq.html">Servicios</a></li>
 				<li><a href="../m/proc_trab.html">Procesos</a></li>
-				<li><a href="../m/testimonios.html">Testimonios</a></li> 
-				<li><a href="../m/contacto_cta.html">Contacto</a></li> 
+				<li><a href="../m/testimonios.html">Testimonios</a></li>
+				<li><a href="../m/contacto_cta.html">Contacto</a></li>
 			</ul>
 			<div class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('active')"> 
 				<span></span> 
@@ -70,140 +70,233 @@
 	<!-- Catálogo --> 
 	<section class="plantillas" id="plantillas">
   		<h2>Catalogo de plantillas</h2>
-  		<div class="plantillas-grid">
-    		<div class="plantilla-card"> 
-    			<img src="../../l/css/imgs/PM-12.png" alt="Plantilla web"> 
-    			<div class="plantilla-content"> 
-    				<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-    				<h3>Landing Page</h3>
-    				<p>Diseño moderno y responsivo para tu negocio.</p> 
-    				<a href="https://y-tec09.github.io/PM-12/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+
+  		<!-- Menú de secciones -->
+		<div class="catalog-menu">
+  			<button class="tab-btn active" data-target="seccion1">Tarjetas WEB</button>
+  			<button class="tab-btn" data-target="seccion2">Páginas WEB</button>
+  			<button class="tab-btn" data-target="seccion3">Sitios WEB</button>
+		</div>
+
+		<!-- Contenido de secciones -->
+		<div class="catalog-content">
+  			<div id="seccion1" class="tab-content active">
+    			<h2>Tarjetas WEB</h2>
+    			<p>Ideal para comenzar con tu presencia web.</p>
+
+    			<div class="plantillas-grid">
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM06.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarjeta promo Cemitas</h3>
+    						<p>¡Que más clientes conozcan tus promos!</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t06/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM05.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarjeta postres</h3>
+    						<p>¡Antoja a mas clientes con tus creaciones!</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t05/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM04.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarheta pasteles</h3>
+    						<p>¡Para esa ocasión especial, se la primera opción!</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t04/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM03.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarjeta tacos de canasta</h3>
+    						<p>¡Un refigerio antes de llegar a casa!</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t03/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM02.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarjete tacos de carnitas</h3>
+    						<p>¡Un aroma irresistible!</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t02/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/TM01.png" alt="Tarjeta web">
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Tarjeta tacos al pastor</h3>
+    						<p>¡A un deicioso paso darle prisa!</p> 
+    						<a href="https://y-tec09.github.io/TM-01/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a>
+    					</div>
+    				</div>
     			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-11.png" alt="Plantilla catálogo">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Barber Shop</h3>
-        			<p>Presenta tus productos con estilo y claridad.</p>
-        			<a href="https://y-tec09.github.io/PM-11/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-10.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-10/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-9.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-9/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-8.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-8/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-7.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-7/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-6.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-6/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-5.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-5/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-4.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-4/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-3.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-3/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-2.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-2/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-    		<div class="plantilla-card">
-      			<img src="../../l/css/imgs/PM-1.png" alt="Plantilla flyer">
-      			<div class="plantilla-content">
-        			<span class="plantilla-badge">HTML</span>
-        			<span class="plantilla-badge">CSS</span>
-        			<span class="plantilla-badge">JS</span>
-        			<h3>Taqueria</h3>
-        			<p>Promociona tus servicios con impacto visual.</p>
-        			<a href="https://y-tec09.github.io/PM-1/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
-      			</div>
-    		</div>
-  		</div>
+  			</div>
+  			<div id="seccion2" class="tab-content">
+    			<h2>Páginas WEB</h2>
+    			<p>Incluye funcionalidades adicionales y diseño personalizado.</p>
+
+    			<div class="plantillas-grid">
+    				<div class="plantilla-card"> 
+    					<img src="../../l/css/imgs/PM-12.png" alt="Plantilla web"> 
+    					<div class="plantilla-content"> 
+    						<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+    						<h3>Landing Page</h3>
+    						<p>Diseño moderno y responsivo para tu negocio.</p> 
+    						<a href="https://y-tec09.github.io/webtargets/plantilla-t01/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+    					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-11.png" alt="Plantilla catálogo">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Barber Shop</h3>
+        					<p>Presenta tus productos con estilo y claridad.</p>
+        					<a href="https://y-tec09.github.io/PM-11/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-10.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-10/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-9.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-9/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-8.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-8/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-7.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-7/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-6.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-6/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-5.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-5/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-4.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-4/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-3.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-3/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-2.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-2/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+    				<div class="plantilla-card">
+      					<img src="../../l/css/imgs/PM-1.png" alt="Plantilla flyer">
+      					<div class="plantilla-content">
+        					<span class="plantilla-badge">HTML</span>
+        					<span class="plantilla-badge">CSS</span>
+        					<span class="plantilla-badge">JS</span>
+        					<h3>Taqueria</h3>
+        					<p>Promociona tus servicios con impacto visual.</p>
+        					<a href="https://y-tec09.github.io/PM-1/" target="__blank"><button class="btn-plantilla">Ver Demo</button></a> 
+      					</div>
+    				</div>
+  				</div>
+  			</div>
+  			<div id="seccion3" class="tab-content">
+    			<h2>Sitios WEB</h2>
+    			<p>Solución completa con integración de servicios y soporte premium.</p>
+  			</div>
+		</div>
 	</section>
 
 	
@@ -242,6 +335,7 @@
 
 	<!--Scipts de animaciones-->
 	<script type="text/javascript" src="../../l/js/animaciones/anim-menu.js"></script>
+	<script type="text/javascript" src="../../l/js/catalog-menu.js"></script>
 	<!--Fin de animaciones-->
 </body>
 </html>
